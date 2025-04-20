@@ -4,54 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeinEdge Advisory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #ffffff;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #222;
     }
     header {
-      background-color: #f2f2f2;
-      padding: 20px;
+      background-color: #f0f0f0;
+      padding: 30px 20px;
       text-align: center;
+      border-bottom: 2px solid #ddd;
     }
     header img {
-      max-width: 220px;
+      width: 200px;
+      max-width: 90%;
     }
     .intro {
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px 20px 20px;
     }
     .intro h1 {
       color: #2e7d32;
-      font-size: 32px;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
     .intro p {
       font-size: 18px;
+      color: #555;
       max-width: 800px;
       margin: auto;
     }
     .services {
-      padding: 40px 20px;
-      background-color: #f9f9f9;
+      background-color: #fafafa;
+      padding: 60px 20px;
     }
     .services h2 {
       text-align: center;
-      color: #27ae60;
-      font-size: 28px;
+      color: #1b5e20;
+      font-size: 30px;
+      margin-bottom: 40px;
     }
-    .services ul {
-      max-width: 900px;
-      margin: 30px auto 0;
-      padding: 0;
-      list-style: none;
+    .services-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-    .services ul li {
-      font-size: 18px;
-      padding: 10px 0;
-      border-bottom: 1px solid #ccc;
+    .service-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+    .service-box p {
+      font-size: 16px;
+      color: #333;
+    }
+    .connect {
+      background-color: #e0f2f1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .connect h2 {
+      font-size: 30px;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+    .connect a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #004d40;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .connect a:hover {
+      background-color: #00695c;
     }
     footer {
       background-color: #2e7d32;
@@ -60,55 +100,72 @@
       padding: 20px;
     }
     footer a {
-      color: white;
-      text-decoration: none;
+      color: #fff;
+      text-decoration: underline;
+    }
+    .bottom-note {
+      text-align: center;
+      padding: 40px 20px 60px 20px;
+      font-size: 18px;
+      color: #444;
+      background-color: #ffffff;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="/mnt/data/Copy%20of%20SeinEdge(1).png" alt="SeinEdge Logo">
+    <img src="https://raw.githubusercontent.com/yourusername/your-repo-name/main/logo.png" alt="SeinEdge Advisory Logo">
   </header>
 
-  <div class="intro">
+  <section class="intro">
     <h1>Welcome to SeinEdge Advisory</h1>
     <p>
-      At <strong>SeinEdge Advisory</strong>, we provide simple, reliable, and professional support for your business and personal financial needs. 
-      From registrations and filings to advisory and training, we help you focus on what matters most—growth and success.
+      Your trusted partner in business setup, compliance, and financial management. At SeinEdge, we deliver practical solutions and personalised support to help your business grow and stay compliant with ease.
     </p>
-  </div>
+  </section>
 
-  <div class="services">
+  <section class="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Bookkeeping & Accounting (Tally, Zoho, QuickBooks)</li>
-      <li>Cash Flow & Budget Planning</li>
-      <li>Payroll Management & Payslip Generation</li>
-      <li>MIS Reports & Financial Summaries</li>
-      <li>GST Registration & Filing</li>
-      <li>ITR Filing (Individuals, Freelancers, Businesses)</li>
-      <li>TDS Filing (Basic Cases)</li>
-      <li>Advance Tax Calculation</li>
-      <li>MSME (Udyam) Registration</li>
-      <li>Import Export Code (IEC)</li>
-      <li>FSSAI License</li>
-      <li>Shops & Establishment Registration</li>
-      <li>Digital Signature Certificate (DSC)</li>
-      <li>EPF & ESI Registration</li>
-      <li>Professional Tax (PT) Filing</li>
-      <li>Basic HR Policies & Payroll Structure Setup</li>
-      <li>Mudra Loan Application</li>
-      <li>CMA Data & Project Report Preparation</li>
-      <li>Business Loan Application Help</li>
-      <li>Bank Statement Review</li>
-      <li>Business Setup Guidance</li>
-      <li>Branding & Process Advisory</li>
-      <li>Tax Planning (Basic)</li>
-      <li>SOP Drafting & Business Templates</li>
-      <li>Tally & Accounting Software Basics</li>
-      <li>GST & ITR Training for Students/Freshers</li>
-      <li>Resume & MS Office Training</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-box"><p>Bookkeeping & Accounting (Tally, Zoho, QuickBooks)</p></div>
+      <div class="service-box"><p>Cash Flow & Budget Planning</p></div>
+      <div class="service-box"><p>Payroll Management & Payslip Generation</p></div>
+      <div class="service-box"><p>MIS Reports & Financial Summaries</p></div>
+      <div class="service-box"><p>GST Registration & Filing</p></div>
+      <div class="service-box"><p>ITR Filing (Individuals, Freelancers, Businesses)</p></div>
+      <div class="service-box"><p>TDS Filing (Basic Cases)</p></div>
+      <div class="service-box"><p>Advance Tax Calculation</p></div>
+      <div class="service-box"><p>MSME (Udyam) Registration</p></div>
+      <div class="service-box"><p>Import Export Code (IEC)</p></div>
+      <div class="service-box"><p>FSSAI License</p></div>
+      <div class="service-box"><p>Shops & Establishment Registration</p></div>
+      <div class="service-box"><p>Digital Signature Certificate (DSC)</p></div>
+      <div class="service-box"><p>EPF & ESI Registration</p></div>
+      <div class="service-box"><p>Professional Tax (PT) Filing</p></div>
+      <div class="service-box"><p>Basic HR Policies & Payroll Structure Setup</p></div>
+      <div class="service-box"><p>Mudra Loan Application</p></div>
+      <div class="service-box"><p>CMA Data & Project Report Preparation</p></div>
+      <div class="service-box"><p>Business Loan Application Help</p></div>
+      <div class="service-box"><p>Bank Statement Review</p></div>
+      <div class="service-box"><p>Business Setup Guidance</p></div>
+      <div class="service-box"><p>Branding & Process Advisory</p></div>
+      <div class="service-box"><p>Tax Planning (Basic)</p></div>
+      <div class="service-box"><p>SOP Drafting & Business Templates</p></div>
+      <div class="service-box"><p>Tally & Accounting Software Basics</p></div>
+      <div class="service-box"><p>GST & ITR Training for Students/Freshers</p></div>
+      <div class="service-box"><p>Resume & MS Office Training</p></div>
+    </div>
+  </section>
+
+  <section class="connect">
+    <h2>Connect With Us</h2>
+    <a href="https://wa.me/919113621459" target="_blank">WhatsApp</a>
+    <a href="tel:+919113621459">Call</a>
+    <a href="mailto:seinedgeadvisory@outlook.com">Email</a>
+  </section>
+
+  <div class="bottom-note">
+    We are here to help startups, freelancers, and small businesses manage their finances and compliances smoothly.
   </div>
 
   <footer>
